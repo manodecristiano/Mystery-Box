@@ -11,13 +11,13 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    background-image: url("../images/cajasorpresaIMG.png");
+    background-image: url("../images/cajacerrada.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 } 
 .caja.abierta{
-    background-image: url("../images/cajasorpresaIMG2.png");
+background-image: url("../images/cajaabierta.png");
 }
 .caja-button{
     margin:100px auto 0px;
@@ -25,3 +25,153 @@
     height:90px;
     /* background-color: rgb(0, 4, 255); */
 } 
+.container{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+}
+.container.blanco{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+}
+.container.black{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgb(33, 25, 21);
+}
+.container.blue{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url("../images/selva.jpg");
+}
+.container.red{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-image: url("../images/payaso.gif");
+    background-repeat: repeat;
+    border-style: groove;
+    border-color: red;
+    
+    
+}
+
+.imagen{
+    position: fixed;
+    width:250px;
+    height:250px;
+   /*background-color: rgb(92, 90, 90);*/
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imagen.mariachi{
+background-image: url("../images/mariachi.gif");
+    
+} 
+.imagen.aleluya{
+background-image: url("../images/aleluya.gif");
+    
+} 
+.imagen.calavera{
+    background-image: url("../images/calavera.gif");
+    top:30%;
+  
+} 
+.imagen.leon{
+    background-image: url("../images/leon.gif");
+    border-color: black;
+    border-style:  groove;
+    top:33%;
+    height: 230px;
+    width: 230px;
+      
+} 
+.imagen.mario{
+     background-image: url("../images/mario.gif");
+     top:30%;
+          
+} 
+ .imagen.payaso{
+    background-image: url("../images/payaso.gif");
+    top:33%;
+ 
+      
+} 
+
+/*border floating*/
+.bb.none {
+    opacity: 0%;
+}
+.bb, .bb::before, .bb::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 260px;
+  height: 220px;
+  /*background-color: rgb(92, 90, 90);*/
+}
+
+.bb {
+  width: 260px;
+  height: 220px;
+  margin: auto;
+  background-size: cover; 
+  color: #f77002;
+  /*background-color: rgb(252, 17, 193);*/
+  
+}
+.bb::before, .bb::after {
+  box-sizing: inherit;
+  content: '';
+  
+  border: 5px solid;
+  animation: clipMe 8s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+.bb:hover::after, .bb:hover::before {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+
+@keyframes clipMe {
+0%, 100% {
+    clip: rect(0px, 260.0px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220.0px, 0px);
+  }
+  50% {
+    clip: rect(218.0px, 260.0px, 220.0px, 0px);
+  }
+  75% {
+    clip: rect(0px, 260.0px, 220.0px, 218.0px);
+  }
+}
+/*
+clip: rect(0px, 220.0px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220.0px, 0px);
+  }
+  50% {
+    clip: rect(218.0px, 220.0px, 220.0px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220.0px, 220.0px, 218.0px);
